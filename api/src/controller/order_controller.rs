@@ -116,28 +116,6 @@ pub async fn get_open_orders(
 
 
 
-// pub async fn cancel_order(
-//     Extension(user_id): Extension<String>,
-//     Query(query): Query<CancelOrderData>,
-// ) -> impl IntoResponse {
-//     match OrderService::cancel_order(
-//         user_id,
-//         query,
-//     )
-//     .await
-//     {
-//         Ok(response) => (
-//             StatusCode::OK,
-//             Json(response),
-//         )
-//             .into_response(),
-
-//         Err(_) => StatusCode::INTERNAL_SERVER_ERROR
-//             .into_response(),
-//     }
-// }
-
-
 
 
 

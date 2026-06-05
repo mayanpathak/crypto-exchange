@@ -184,16 +184,6 @@ println!("====================================\n");
 
 
 
-    // =========================
-    // API Routes
-    // =========================
-
-    // let api_routes = Router::new()
-    //     .nest("/auth", auth_routes())
-    //     .nest("/orders/", order_routes())
-    //     .nest("/depth", depth_routes());
-
-
 let api_routes = Router::new()
     .nest("/auth", auth_routes())
     .nest("/orders", order_routes())   // remove trailing slash

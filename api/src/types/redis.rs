@@ -1,26 +1,7 @@
 use serde::{Serialize, Deserialize};
 
 
-// #[derive(Serialize, Deserialize, Debug)]
-// #[serde(tag = "type")]
-// pub enum MessageFromOrderbook {
-//     #[serde(rename = "DEPTH")]
-//     Depth {
-//         payload: DepthPayload,
-//     },
-//     #[serde(rename = "ORDER_PLACED")]
-//     OrderPlaced {
-//         payload: OrderPlacedPayload,
-//     },
-//     #[serde(rename = "ORDER_CANCELLED")]
-//     OrderCancelled {
-//         payload: OrderCancelledPayload,
-//     },
-//     #[serde(rename = "OPEN_ORDERS")]
-//     OpenOrders {
-//         payload: Vec<OpenOrder>,
-//     },
-// }
+
 
 
 
@@ -60,12 +41,7 @@ pub struct DepthPayload {
     pub asks: Vec<[String; 2]>,
 }
 
-// #[derive(Serialize, Deserialize, Debug)]
-// pub struct Fill {
-//     pub price: String,
-//     pub qty: f64,
-//     pub trade_id: i64,
-// }
+
 
 
 
@@ -153,16 +129,6 @@ where
 
 
 
-// #[derive(Serialize, Deserialize, Debug)]
-// pub struct OpenOrder {
-//     pub order_id: String,
-//     pub executed_qty: f64,
-//     pub price: String,
-//     pub quantity: String,
-//     #[serde(rename = "side")]
-//     pub side: OrderSide,
-//     pub user_id: String,
-// }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "lowercase")]
